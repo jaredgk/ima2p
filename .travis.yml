@@ -1,3 +1,6 @@
 language: c++
 install: 
-- ./configure && make && make install && mpicxx -DMPI_ENABLED -o IMa2p src/*.cpp
+- ./configure 
+- make 
+- make install 
+- mpicxx -DMPI_ENABLED -o IMa2p src/*.cpp
