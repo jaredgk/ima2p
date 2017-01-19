@@ -1,6 +1,8 @@
 language: c++
 before_install:
 - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --force-yes install libcr-dev mpich2 mpich2-doc
+- make all
+- sudo -E make install
 install: 
 - ./configure --prefix=/home/travis/build/jaredgk/ima2p/
 - make 
