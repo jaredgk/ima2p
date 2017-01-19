@@ -1,6 +1,6 @@
 language: c++
 install: 
-- ./configure 
+- ./configure --prefix=/usr/local/bin
 - make 
 - make install 
 - mpicxx -DMPI_ENABLED -o IMa2p src/*.cpp
