@@ -1,4 +1,7 @@
 language: c++
+
+sudo: required
+
 before_install:
 - bash install_mpi.sh
 install: 
