@@ -2,7 +2,7 @@ language: c++
 
 sudo: required
 
-install: 
+script: 
 - ./configure --with-mpi=no --prefix=/home/travis/build/jaredgk/ima2p/
 - make 
 - make install 
