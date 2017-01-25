@@ -2,10 +2,8 @@ language: c++
 
 sudo: required
 
-before_install:
-- bash install_mpi.sh
 install: 
-- ./configure --with-mpi-yes --prefix=/home/travis/build/jaredgk/ima2p/
+- ./configure --with-mpi=no --prefix=/home/travis/build/jaredgk/ima2p/
 - make 
 - make install 
-- mpicxx -DMPI_ENABLED -o IMa2p src/*.cpp
+- g++ -o IMa2p src/*.cpp
